@@ -1,0 +1,10 @@
+services:
+  app:
+    container_name: medicine_time_app
+    build:
+      context: .
+  database:
+    container_name: medicine_time_database
+    image: mariadb:11.3.2
+    environment:
+      - MARIADB_ROOT_PASSWORD=password
